@@ -20,7 +20,7 @@ int heat_eqn_solver_1d(double *heat_array, double *err, size_t num_pts)
         return -1;
     if (num_pts == 0)
         return 0;
-
+//
     const int active = (num_pts < (size_t)world_size)
                          ? (int)num_pts : world_size;
     MPI_Comm comm = MPI_COMM_NULL;
